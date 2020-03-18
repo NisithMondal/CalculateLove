@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/app_toolbar"
+        layout="@layout/app_toolbar"
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/male_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Male Name"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/app_toolbar"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/female_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Female Name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/male_name_edit_text"
+        android:textColor="@android:color/black"
+        />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:src="@drawable/love"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:textSize="26sp" />
+
+
+
+    <Button
+        android:id="@+id/calculate_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image_view"
+        android:layout_marginTop="16dp"
+        android:text="  CALCULATE  LOVE  "
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        />
+
+</RelativeLayout>
